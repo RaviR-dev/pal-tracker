@@ -33,7 +33,7 @@ public class TimeEntryController {
 
     @GetMapping(value = "/time-entries", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<TimeEntry>> list() {
-        List<TimeEntry> timeEntries = new ArrayList<>(timeEntryRepository.list());
+        List<TimeEntry> timeEntries = timeEntryRepository.list();
         return ResponseEntity.ok(timeEntries);
     }
 

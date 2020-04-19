@@ -1,6 +1,5 @@
 package io.pivotal.pal.tracker;
 
-import java.util.Collection;
 import java.util.List;
 
 public interface TimeEntryRepository {
@@ -8,7 +7,7 @@ public interface TimeEntryRepository {
 
     TimeEntry create(TimeEntry timeEntry);
 
-    Collection<TimeEntry> list();
+    List<TimeEntry> list();
 
     TimeEntry update(long id, TimeEntry timeEntry);
 
